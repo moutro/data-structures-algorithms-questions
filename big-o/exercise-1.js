@@ -15,4 +15,4 @@ funChallenge(); // O(n) where n is the length of the input array.
 
 // we have 3 steps
 //3 + n + n + n + n 
-BIG O(3 + 4n)  // This we will learn gets simplified to just O(n) since n will be larger than the constants as n approaches infinity.
+// BIG O(3 + 4n)  // This we will learn gets simplified to just O(n) since n will be larger than the constants as n approaches infinity.
