@@ -23,4 +23,4 @@ const logFirstTwoBoxes = (boxes) => {
       console.log(boxes[1]);  // O(1)
   }
 
-  logFirstTwoBoxes(boxes); // O(2)
+  logFirstTwoBoxes(boxes); // O(2) -- Constant Time
