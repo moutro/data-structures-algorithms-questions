@@ -12,7 +12,7 @@ function hasPairWithSum(arr, sum){
 }
 
 // Better
-function hasPairWithSum2(arr, sum) {
+function firstRecurringCharacter3(arr, sum) {
     const mySet = new Set();
     const len = arr.length;
     for (let i = 0; i < len; i++) {
