@@ -15,6 +15,14 @@
 //   }
 // }
 
+// a way to DRY not repeat newNode code all the time in each variation of the method.
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
 // add a method remove() to the linked list that deletes a node to the specified index.
 
 class LinkedList {
@@ -27,6 +35,7 @@ class LinkedList {
     this.length = 1;
   }
   append(value) {
+    // const newNode = new Node(value); // DRY
     const newNode = {
       value: value,
       next: null
