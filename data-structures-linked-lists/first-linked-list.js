@@ -40,7 +40,7 @@ class LinkedList {
       value: value,
       next: null
     }
-    this.tail.next = newNode;
+     this.tail.next = newNode;
     this.tail = newNode;
     this.length++;
     return this;
@@ -93,6 +93,8 @@ class LinkedList {
     return currentNode;
   }
   remove(index){
+    //Check for proper parameters;
+    // if the index is a positive number, whether the index is higher than the length 
     const leader = this.traverseToIndex(index-1);
     const unwantedNode = leader.next;
     leader.next = unwantedNode.next;
@@ -109,6 +111,7 @@ console.log(myLinkedList.printList());
 console.log(myLinkedList.insert(2, 99));
 console.log(myLinkedList.insert(20, 88));
 console.log(myLinkedList.printList());
+console.log(myLinkedList.remove(2));
 
 
 
