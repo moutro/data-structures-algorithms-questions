@@ -1,3 +1,20 @@
+// This is a structure to base how we create a linked list.
+
+// 10 --> 5 --> 16
+
+// let myLinkedList = {
+//   head: {
+//     value: 10,
+//     next: {
+//       value: 5,
+//       next: {
+//         value: 16,
+//         next: null
+//       }
+//     }
+//   }
+// }
+
 // add a method remove() to the linked list that deletes a node to the specified index.
 
 class LinkedList {
@@ -66,13 +83,23 @@ class LinkedList {
     }
     return currentNode;
   }
+  remove(index){
+    const leader = this.traverseToIndex(index-1);
+    const unwantedNode = leader.next;
+    leader.next = unwantedNode.next;
+    this.length--;
+    return this.printList();
+  }
 }
 
 let myLinkedList = new LinkedList(10);
-myLinkedList.append(5);
-myLinkedList.append(16);myLinkedList.prepend(1);
-myLinkedList.insert(2, 99);
-myLinkedList.insert(20, 88);
+console.log(myLinkedList.append(5));
+console.log(myLinkedList.append(16));
+console.log(myLinkedList.prepend(1));
+console.log(myLinkedList.printList());
+console.log(myLinkedList.insert(2, 99));
+console.log(myLinkedList.insert(20, 88));
+console.log(myLinkedList.printList());
 
 
 
