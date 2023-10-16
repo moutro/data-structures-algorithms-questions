@@ -114,6 +114,46 @@ class DoublyLinkedList {
     this.length--;
     return this.printList();
   }
+
+// copilot solution:
+//   reverse() {
+//     // check params
+//     if (!this.head.next) {
+//       return this.head;
+//     }
+//     let currentNode = this.head;
+//     let prevNode = null;
+//     let nextNode = null;
+//     while(currentNode!== null) {
+//       nextNode = currentNode.next;
+//       currentNode.next = prevNode;
+//       currentNode.prev = nextNode;
+//       prevNode = currentNode;
+//       currentNode = nextNode;
+//     }
+//     this.head = prevNode;
+//     return this.printList();
+//   }
+// }
+
+// ztm solution:
+reverse() {
+    if (!this.head) {
+      return this.head;
+    }
+    let first = this.head;
+    this.tail = this.head;
+    let second = first.next;
+    while (second) {
+        let temp = second.next;
+        second.next = first;
+        first = second;
+        second = temp;
+    }
+    this.head.next = null;
+    this.head = first;
+    return this.printList();
+}
 }
 
 let myLinkedList = new DoublyLinkedList(10);
@@ -125,6 +165,7 @@ console.log(myLinkedList.insert(1, 99));
 // console.log(myLinkedList.insert(20, 88));
 // console.log(myLinkedList.printList());
 console.log(myLinkedList.remove(2));
+console.log(myLinkedList.reverse());
 
 
 
