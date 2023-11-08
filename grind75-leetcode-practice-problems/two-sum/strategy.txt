@@ -1,0 +1,23 @@
+Brute Force:
+
+If the requirement is to use two loops without extra space for a hash map or hash table, you can solve the problem using a nested loop, 
+where the outer loop fixes one element and the inner loop looks for another element which, when added to the fixed element, gives the target sum.
+
+
+
+Optimized Big O:
+
+// create an empty Map to store all nums and their respective index
+
+    // loop over nums
+  
+        // store current number
+  
+        // calculate the remainder of target minus current num
+    
+        // check if our Map already has the remainder in it
+
+            // if it does, then return an array with 
+            // the index of the remainder and the current index in our loop
+
+        // set current number to its index in the Map

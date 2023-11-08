@@ -1,0 +1,29 @@
+That sounds like an excellent approach! 
+
+Mock interviews and whiteboarding sessions are great ways to prepare for technical interviews, 
+especially when they focus on the thought process, problem-solving techniques, and communication skills alongside coding ability.
+
+
+
+Here's how we can structure our mock interview session:
+
+1. Understanding the Problem: You'll read out the problem statement, and I'll ask clarifying questions if necessary. 
+   This step ensures you've understood the problem correctly.
+
+2. Exploring Examples: You'll provide examples and edge cases. We’ll discuss these examples to understand the problem better and to cover 
+   the breadth of the problem space.
+
+3. Brute Force Solution: You'll describe and then write a brute force solution, which may not be efficient but is a good starting point. 
+   We'll discuss its time and space complexity.
+
+4. Optimizing: After the brute force solution, you'll think out loud about different ways to optimize the solution. 
+   This might involve discussing data structures, algorithms, or problem-solving techniques that could improve the solution.
+
+5. Coding the Optimized Solution: You'll code the optimized solution, writing comments first to outline your approach.
+
+6. Testing: You'll walk through the code with the example inputs you initially provided, including any edge cases, to ensure it works as expected.
+
+7. Review and Refactor: If there's time, we'll review the code for readability, performance, and any other best practices.
+
+8. Discussing the Solution: Finally, we'll discuss the solution in terms of its complexity and possible questions an interviewer might ask.
+
